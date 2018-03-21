@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    tools:layout_editor_absoluteX="8dp"
+    tools:layout_editor_absoluteY="0dp"
+    app:cardElevation="3dp"
+    app:cardCornerRadius="3dp"
+    android:layout_margin="1dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:id="@+id/linearLayout5">
+
+            <ImageView
+                android:id="@+id/statistics_redirect"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/ic_graph" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/spacer"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/linearLayout5"
+            android:layout_toStartOf="@+id/linearLayout5" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/black"
+            />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/notify_color_panel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/spacer"
+            android:layout_toStartOf="@+id/spacer"
+            android:clickable="true"
+            android:focusable="true">
+
+            <TextView
+                android:id="@+id/student_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:text="AYOUB ESSARE"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:textSize="30sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/last_absense_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/student_name"
+                android:layout_alignParentBottom="true"
+                android:layout_alignStart="@+id/student_name"
+                android:text="Le 21 Mars non justifi\é"
+                android:layout_margin="5dp"
+                android:textStyle="bold"
+                android:textColor="#ff0000"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tdigroup.istaabsense.HomeFilterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:id="@+id/linearLayout"
+        android:gravity="center">
+
+        <belka.us.androidtoggleswitch.widgets.ToggleSwitch
+            android:id="@+id/branch_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            custom:activeBgColor="@android:color/holo_blue_dark"
+            custom:activeTextColor="@android:color/white"
+            custom:inactiveBgColor="#eaeaea"
+            custom:inactiveTextColor="@android:color/black"
+            custom:separatorColor="@color/gray_very_light"
+            custom:textToggleLeft="@string/f_ts"
+            custom:textToggleRight="@string/f_t"
+            custom:toggleWidth="204dp"
+            custom:cornerRadius="8dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linearLayout"
+        android:layout_alignStart="@+id/linearLayout"
+        android:layout_alignRight="@+id/linearLayout"
+        android:layout_alignEnd="@+id/linearLayout"
+        android:layout_below="@+id/linearLayout"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout2">
+
+        <belka.us.androidtoggleswitch.widgets.ToggleSwitch
+            android:id="@+id/level_year_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            custom:activeBgColor="@android:color/holo_blue_dark"
+            custom:activeTextColor="@android:color/white"
+            custom:inactiveBgColor="#eaeaea"
+            custom:inactiveTextColor="@android:color/black"
+            custom:separatorColor="@color/gray_very_light"
+            custom:textToggleLeft="@string/prem_anne"
+            custom:textToggleRight="@string/deux_anne"
+            custom:toggleWidth="204dp"
+            custom:cornerRadius="8dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linearLayout2"
+        android:layout_alignStart="@+id/linearLayout2"
+        android:layout_alignRight="@id/linearLayout2"
+        android:layout_alignEnd="@id/linearLayout2"
+        android:layout_below="@+id/linearLayout2"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:id="@+id/linearLayout3">
+
+        <com.jaredrummler.materialspinner.MaterialSpinner
+            android:id="@+id/filiere_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:ms_arrow_tint="@color/colorPrimary"
+            app:ms_background_color="#eaeaea"
+            android:text="@string/slct_filiere"
+            android:textSize="20sp"
+            android:layout_marginBottom="10dp"/>
+
+        <com.jaredrummler.materialspinner.MaterialSpinner
+            android:id="@+id/groupes_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:ms_arrow_tint="@color/colorPrimary"
+            app:ms_background_color="#eaeaea"
+            android:text="@string/slct_groupes"
+            android:textSize="20sp"
+            android:layout_marginBottom="10dp"/>
+
+        <com.jaredrummler.materialspinner.MaterialSpinner
+            android:id="@+id/profs_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:ms_arrow_tint="@color/colorPrimary"
+            app:ms_background_color="#eaeaea"
+            android:text="@string/slct_prof_name"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linearLayout3"
+        android:layout_alignStart="@+id/linearLayout3"
+        android:layout_alignRight="@id/linearLayout3"
+        android:layout_alignEnd="@id/linearLayout3"
+        android:layout_below="@+id/linearLayout3"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:id="@+id/linearLayout4">
+
+        <com.warkiz.widget.IndicatorSeekBar
+            android:id="@+id/morning_hours_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:isb_tick_size="32sp"
+            app:isb_track_progress_bar_size="3dp"
+            app:isb_indicator_type="rectangle_rounded_corner"
+            app:isb_progress="2"
+            app:isb_max="6"
+            app:isb_seek_bar_type="discrete_ticks_texts"
+            app:isb_show_indicator="true"
+            app:isb_tick_drawable="@drawable/tick_custom"
+            app:isb_text_array="@array/morning_ticks"
+            app:isb_tick_num="6" />
+
+        <com.warkiz.widget.IndicatorSeekBar
+            android:id="@+id/evening_hours_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:isb_tick_size="32sp"
+            app:isb_track_progress_bar_size="3dp"
+            app:isb_indicator_type="rectangle_rounded_corner"
+            app:isb_progress="5"
+            app:isb_max="6"
+            app:isb_seek_bar_type="discrete_ticks_texts"
+            app:isb_show_indicator="true"
+            app:isb_tick_drawable="@drawable/tick_custom"
+            app:isb_text_array="@array/evening_ticks"
+            app:isb_tick_num="6" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_alignEnd="@+id/linearLayout2"
+        android:layout_alignRight="@+id/linearLayout2"
+        android:layout_alignLeft="@+id/linearLayout2"
+        android:layout_alignStart="@+id/linearLayout2"
+        android:layout_below="@+id/linearLayout4"
+        android:text="@string/enter_filtrage"
+        android:textSize="30sp"
+        android:layout_marginTop="20dp"
+        style="@style/Widget.AppCompat.Button.Colored"/>
+
+</RelativeLayout>

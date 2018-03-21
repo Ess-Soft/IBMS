@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ISTA Absense</string>
+
+    <string name="f_ts">Technicien Specialisé</string>
+    <string name="f_t">Technicien</string>
+
+    <string name="prem_anne">1er Ann\ée</string>
+    <string name="deux_anne">2eme Ann\ée</string>
+
+    <string name="slct_filiere">s\électionner une Fili\ére</string>
+    <string name="slct_groupes">s\électionner un groupe</string>
+    <string name="slct_prof_name">s\électionner le nom du Prof</string>
+
+    <string name="enter_filtrage">Entrer</string>
+</resources>
