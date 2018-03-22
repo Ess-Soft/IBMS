@@ -18,7 +18,7 @@
         android:gravity="center">
 
         <belka.us.androidtoggleswitch.widgets.ToggleSwitch
-            android:id="@+id/branch_switch"
+            android:id="@+id/niveau_switch"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="18sp"
