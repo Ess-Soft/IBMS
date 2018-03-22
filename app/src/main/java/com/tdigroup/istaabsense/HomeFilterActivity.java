@@ -91,23 +91,25 @@ public class HomeFilterActivity extends AppCompatActivity {
 
         /** check if its the Morning or Evening to show */
         if (TimeUtils.getWorkingTime() == TimeUtils.MORNING_TIME){
+            hours_seekBar.setTickEnd(8.0f); // i added the "f" because the number is float
+            hours_seekBar.setTickStart((float) 13.0); // another way to do same ;)
             timeStartIndicatorTv.setText("8");
             timeEndIndicatorTv.setText("13");
         } else if(TimeUtils.getWorkingTime() == TimeUtils.EVENING_TIME){
             timeStartIndicatorTv.setText("13");
             timeEndIndicatorTv.setText("19");
         } else {
-          //  utils.hideView(enterBtn);
+            utils.hideView(enterBtn);
         }
 
 
 
 
-        /** if time is not between 8-13 or 13-19
+         /**if time is not between 8-13 or 13-19*/
         if(TimeUtils.getWorkingTime() == TimeUtils.SCHOOL_OUT_TIME){
             school_timedTv.setText(R.string.school_timed_out_message);
         }
-         */
+
 
 
 
