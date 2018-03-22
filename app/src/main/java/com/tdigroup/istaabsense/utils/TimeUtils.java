@@ -15,7 +15,7 @@ public class TimeUtils {
      * This Function will check the time of the day
      * @return int
      */
-    public int getWorkingTime(){
+    public static int getWorkingTime(){
         /** get Hours of the day */
         Calendar c = Calendar.getInstance();
         int timeOfDay = c.get(Calendar.HOUR_OF_DAY);

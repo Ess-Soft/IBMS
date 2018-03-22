@@ -8,8 +8,10 @@
     <string name="deux_anne">2eme Ann\ée</string>
 
     <string name="slct_filiere">s\électionner une Fili\ére</string>
+    <string name="slct_secteur">s\électionner un secteur</string>
     <string name="slct_groupes">s\électionner un groupe</string>
     <string name="slct_prof_name">s\électionner le nom du Prof</string>
 
     <string name="enter_filtrage">Entrer</string>
+    <string name="school_timed_out_message">La periode des seances ont été termin\é. Veuillez r\éessayer demain matin.</string>
 </resources>
