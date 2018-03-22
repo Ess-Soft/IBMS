@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:custom="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -7,6 +7,9 @@
     android:layout_height="match_parent"
     tools:context="com.tdigroup.istaabsense.HomeFilterActivity">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -26,7 +29,7 @@
             custom:separatorColor="@color/gray_very_light"
             custom:textToggleLeft="@string/f_ts"
             custom:textToggleRight="@string/f_t"
-            custom:toggleWidth="204dp"
+            custom:toggleWidth="150dp"
             custom:cornerRadius="8dp"/>
     </LinearLayout>
 
@@ -55,7 +58,7 @@
             custom:separatorColor="@color/gray_very_light"
             custom:textToggleLeft="@string/prem_anne"
             custom:textToggleRight="@string/deux_anne"
-            custom:toggleWidth="204dp"
+            custom:toggleWidth="150dp"
             custom:cornerRadius="8dp"/>
 
     </LinearLayout>
@@ -160,4 +163,5 @@
         android:layout_marginTop="20dp"
         style="@style/Widget.AppCompat.Button.Colored"/>
 
-</RelativeLayout>
+    </RelativeLayout>
+</ScrollView>
