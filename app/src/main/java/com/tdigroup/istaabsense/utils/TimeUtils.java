@@ -23,7 +23,7 @@ public class TimeUtils {
         if(timeOfDay >= 8 && timeOfDay < 13){
             /** Return 0 if it's morning between 8 and 13 */
             return MORNING_TIME;
-        }else if(timeOfDay >= 13 && timeOfDay < 18){
+        }else if(timeOfDay >= 13 && timeOfDay < 19){
            return EVENING_TIME;
         }
         return SCHOOL_OUT_TIME;
