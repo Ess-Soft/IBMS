@@ -105,7 +105,7 @@
             android:textSize="20sp"/>
     </LinearLayout>
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/linearLayout3"
@@ -117,20 +117,23 @@
         android:layout_marginTop="10dp"
         android:id="@+id/linearLayout4">
 
-        <com.warkiz.widget.IndicatorSeekBar
-            android:id="@+id/morning_hours_seekbar"
+        <com.appyvet.materialrangebar.RangeBar
+            xmlns:app="http://schemas.android.com/apk/res-auto"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:isb_tick_size="32sp"
-            app:isb_track_progress_bar_size="3dp"
-            app:isb_indicator_type="rectangle_rounded_corner"
-            app:isb_progress="2"
-            app:isb_max="6"
-            app:isb_seek_bar_type="discrete_ticks_texts"
-            app:isb_show_indicator="true"
-            app:isb_tick_drawable="@drawable/tick_custom"
-            app:isb_text_array="@array/morning_ticks"
-            app:isb_tick_num="6" />
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            app:mrb_pinMaxFont="10sp"
+            app:mrb_rangeBarPaddingBottom="12dp"
+            app:mrb_selectorBoundaryColor="@color/colorPrimary"
+            app:mrb_selectorBoundarySize="2dp"
+            app:mrb_pinTextColor="#ffffff"
+            app:mrb_tickColor="@color/colorPrimary"
+            app:mrb_rangeBarColor="@color/colorPrimary"
+            app:mrb_selectorSize="10dp"
+            app:mrb_tickEnd="13"
+            app:mrb_tickInterval="1"
+            app:mrb_tickStart="8"/>
 
         <com.warkiz.widget.IndicatorSeekBar
             android:id="@+id/evening_hours_seekbar"
@@ -141,13 +144,35 @@
             app:isb_indicator_type="rectangle_rounded_corner"
             app:isb_progress="5"
             app:isb_max="6"
+            android:visibility="gone"
             app:isb_seek_bar_type="discrete_ticks_texts"
             app:isb_show_indicator="true"
             app:isb_tick_drawable="@drawable/tick_custom"
             app:isb_text_array="@array/evening_ticks"
             app:isb_tick_num="6" />
 
-    </LinearLayout>
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8"
+            android:textSize="25sp"
+            android:paddingLeft="22dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="13"
+            android:textSize="25sp"
+            android:paddingRight="18dp"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
 
     <Button
         android:id="@+id/button"
