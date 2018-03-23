@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">ISTA Absense</string>
+    <string name="app_version_name">Version 1.0-beta</string>
+    <string name="loading_message">Chargement encours...</string>
 
     <string name="f_ts">Technicien Specialisé</string>
     <string name="f_t">Technicien</string>

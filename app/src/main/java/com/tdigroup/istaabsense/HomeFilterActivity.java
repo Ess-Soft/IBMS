@@ -9,11 +9,8 @@ import android.widget.TextView;
 import com.appyvet.materialrangebar.RangeBar;
 import com.jaredrummler.materialspinner.MaterialSpinner;
 import com.tdigroup.istaabsense.globarVariables.VariablesData;
-import com.tdigroup.istaabsense.model.StagiaireModel;
 import com.tdigroup.istaabsense.utils.AppUtils;
 import com.tdigroup.istaabsense.utils.TimeUtils;
-
-import java.util.ArrayList;
 
 import belka.us.androidtoggleswitch.widgets.ToggleSwitch;
 import butterknife.BindView;
@@ -96,14 +93,14 @@ public class HomeFilterActivity extends AppCompatActivity {
             timeStartIndicatorTv.setText("8");
             timeEndIndicatorTv.setText("13");
         } else if(TimeUtils.getWorkingTime() == TimeUtils.EVENING_TIME){
+            hours_seekBar.setTickEnd(13.0f); // i added the "f" because the number is float
+            hours_seekBar.setTickStart((float) 18.30); // another way to do same ;)
             timeStartIndicatorTv.setText("13");
             timeEndIndicatorTv.setText("19");
         } else {
             utils.hideView(enterBtn);
+            hours_seekBar.setEnabled(false); // deactivate the hours slider when time is not for school
         }
-
-
-
 
          /**if time is not between 8-13 or 13-19*/
         if(TimeUtils.getWorkingTime() == TimeUtils.SCHOOL_OUT_TIME){
