@@ -8,7 +8,7 @@ import android.widget.TextView;
 
 import com.appyvet.materialrangebar.RangeBar;
 import com.jaredrummler.materialspinner.MaterialSpinner;
-import com.tdigroup.istaabsense.globarVariables.VariablesData;
+import com.tdigroup.istaabsense.globalVariables.VariablesData;
 import com.tdigroup.istaabsense.utils.AppUtils;
 import com.tdigroup.istaabsense.utils.TimeUtils;
 
