@@ -4,6 +4,7 @@ import java.util.Date;
 
 /**
  * Created by ayoub on 3/22/18.
+ * Edited by Youssef on 3/23/18.
  */
 
 public class Stagiaire {
