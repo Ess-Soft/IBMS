@@ -131,6 +131,7 @@
                 android:id="@+id/hours_seekBar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="3dp"
                 app:mrb_pinMaxFont="15sp"
                 app:mrb_pinTextColor="#ffffff"
                 app:mrb_rangeBarColor="@color/colorPrimary"
@@ -140,8 +141,7 @@
                 app:mrb_tickColor="@color/colorPrimary"
                 app:mrb_tickEnd="13"
                 app:mrb_tickInterval="1"
-                app:mrb_tickStart="8"
-                android:layout_margin="3dp"/>
+                app:mrb_tickStart="8" />
 
             <TextView
                 android:id="@+id/timeStartIndicatorTv"
