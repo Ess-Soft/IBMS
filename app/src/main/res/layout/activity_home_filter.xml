@@ -183,17 +183,17 @@
             android:id="@+id/school_timedTv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/enterBtn"
-            android:layout_alignStart="@+id/enterBtn"
-            android:layout_alignRight="@+id/enterBtn"
             android:layout_alignEnd="@+id/enterBtn"
+            android:layout_alignLeft="@+id/enterBtn"
+            android:layout_alignRight="@+id/enterBtn"
+            android:layout_alignStart="@+id/enterBtn"
             android:layout_below="@+id/enterBtn"
-            android:text=""
-            android:gravity="center"
             android:layout_marginBottom="15dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text=""
             android:textColor="@color/errorColor"
-            android:textStyle="bold"
-            android:layout_marginTop="10dp"/>
+            android:textStyle="bold" />
 
     </RelativeLayout>
 </ScrollView>

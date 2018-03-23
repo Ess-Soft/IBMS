@@ -6,7 +6,7 @@ import java.util.Date;
  * Created by ayoub on 3/22/18.
  */
 
-public class StagiaireModel {
+public class Stagiaire {
 
     public int getMatriculeStagiaire() {
         return matriculeStagiaire;
@@ -73,7 +73,7 @@ public class StagiaireModel {
     }
 
 
-    public StagiaireModel(int matriculeStagiaire, String nomStagiaire, String prenomStagiaire, String cinStagiaire, String addresseStagiaire, String telStagiaire, char sexeStagiaire, Date dateNaissanceStagiaire) {
+    public Stagiaire(int matriculeStagiaire, String nomStagiaire, String prenomStagiaire, String cinStagiaire, String addresseStagiaire, String telStagiaire, char sexeStagiaire, Date dateNaissanceStagiaire) {
         this.matriculeStagiaire = matriculeStagiaire;
         this.nomStagiaire = nomStagiaire;
         this.prenomStagiaire = prenomStagiaire;
@@ -84,7 +84,7 @@ public class StagiaireModel {
         this.dateNaissanceStagiaire = dateNaissanceStagiaire;
     }
 
-    public StagiaireModel(){
+    public Stagiaire(){
 
     }
 

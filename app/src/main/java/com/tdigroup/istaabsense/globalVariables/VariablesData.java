@@ -1,6 +1,4 @@
-package com.tdigroup.istaabsense.globarVariables;
-
-import java.security.acl.NotOwnerException;
+package com.tdigroup.istaabsense.globalVariables;
 
 /**
  * Created by ayoub on 3/22/18.
