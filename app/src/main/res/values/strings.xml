@@ -16,4 +16,14 @@
 
     <string name="enter_filtrage">Entrer</string>
     <string name="school_timed_out_message">La periode des seances ont été termin\é. Veuillez r\éessayer demain matin.</string>
+
+    <string name="db_import_title">Importer la Base</string>
+    <string name="db_export_title">Exporter la base</string>
+
+    <string name="menu_import_export">Importer/Exporter</string>
+    <string name="menu_settings">Parametres</string>
+    <string name="menu_about">\Á Propos</string>
+    <string name="txt_last_imported">Derni\ére importation:</string>
+    <string name="txt_db_source_path">Chemin de la base source:</string>
+    <string name="btn_import_start">Importer la Base de donn\és</string>
 </resources>

@@ -2,7 +2,6 @@ package com.tdigroup.istaabsense.dbhelpers;
 
 /**
  * Created by ayoub on 3/22/18.
- * Edited by Youssef on 3/23/18.
  */
 
 public class DatabaseVariables {
@@ -90,11 +89,6 @@ public class DatabaseVariables {
     public static final String COL_Stagiaires_Adresse = "Adresse";
     public static final String COL_Stagiaires_Tel = "Tel";
     public static final String COL_Stagiaires_DateNaiss = "DateNaiss";
-
-
-
-
-
 
 
 

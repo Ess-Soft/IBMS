@@ -24,7 +24,7 @@ public class DatabaseUtils {
         try {
             String DBLocation = context.getDatabasePath(DatabaseVariables.DB_NAME).getPath();
             InputStream inputStream = context.getAssets().open("database/"+DatabaseVariables.DB_NAME);
-            String outFileName = DBLocation + DatabaseVariables.DB_NAME;
+            String outFileName = DBLocation ;
             OutputStream outputStream = new FileOutputStream(outFileName);
             byte[]buff = new byte[1024];
             int length;

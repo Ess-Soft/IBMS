@@ -36,7 +36,7 @@ public class LaunchActivity extends AppCompatActivity {
                     // when 5 seconds has been finished then firing up the next activity
                     startActivity(new Intent(LaunchActivity.this, HomeFilterActivity.class)); // target activity is HomeFilterActivity
                 }
-            }, 5000); /** wait 5000 millisecond = 5 seconds */
+            }, 1000); /** wait 5000 millisecond = 5 seconds */
         } else {
             /** db is not set yet trying to copy it to its right local path */
             if (DatabaseUtils.copyDatabase(this)) {
@@ -47,7 +47,7 @@ public class LaunchActivity extends AppCompatActivity {
                         // when 5 seconds has been finished then firing up the next activity
                         startActivity(new Intent(LaunchActivity.this, HomeFilterActivity.class)); // target activity is HomeFilterActivity
                     }
-                }, 5000);
+                }, 1000);
             } else {
                 /** something bad happened and DB hasn't been copied :( trying to stop app */
                 finish(); // finish() will just kill this activity

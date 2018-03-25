@@ -84,7 +84,9 @@
                 android:text="@string/slct_secteur"
                 android:textSize="20sp"
                 app:ms_arrow_tint="@color/colorPrimary"
-                app:ms_background_color="#eaeaea" />
+                app:ms_background_color="#eaeaea"
+                app:ms_dropdown_max_height="350dp"
+                app:ms_dropdown_height="wrap_content"/>
 
             <com.jaredrummler.materialspinner.MaterialSpinner
                 android:id="@+id/filiere_spinner"
@@ -94,7 +96,9 @@
                 android:text="@string/slct_filiere"
                 android:textSize="20sp"
                 app:ms_arrow_tint="@color/colorPrimary"
-                app:ms_background_color="#eaeaea" />
+                app:ms_background_color="#eaeaea"
+                app:ms_dropdown_max_height="350dp"
+                app:ms_dropdown_height="wrap_content"/>
 
             <com.jaredrummler.materialspinner.MaterialSpinner
                 android:id="@+id/groupes_spinner"
@@ -120,10 +124,11 @@
             android:id="@+id/linearLayout4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignEnd="@id/linearLayout3"
-            android:layout_alignLeft="@+id/linearLayout3"
-            android:layout_alignRight="@id/linearLayout3"
-            android:layout_alignStart="@+id/linearLayout3"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginEnd="20dp"
+            android:padding="5dp"
             android:layout_below="@+id/linearLayout3"
             android:orientation="vertical">
 
@@ -131,17 +136,21 @@
                 android:id="@+id/hours_seekBar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="3dp"
-                app:mrb_pinMaxFont="15sp"
+                app:mrb_pinMaxFont="20sp"
+                app:mrb_pinPadding="@dimen/ms__popup_padding_top"
+                app:mrb_pinRadius="20dp"
                 app:mrb_pinTextColor="#ffffff"
                 app:mrb_rangeBarColor="@color/colorPrimary"
-                app:mrb_selectorBoundaryColor="#ff0000"
-                app:mrb_selectorBoundarySize="1dp"
+                app:mrb_selectorBoundaryColor="#000000"
+                app:mrb_selectorBoundarySize="3dp"
+                app:mrb_connectingLineColor="@color/colorPrimary"
+                app:mrb_pinColor="@color/colorAccent"
+                app:mrb_selectorColor="@color/colorPrimary"
                 app:mrb_selectorSize="15dp"
-                app:mrb_tickColor="@color/colorPrimary"
-                app:mrb_tickEnd="13"
+                app:mrb_tickColor="#ffffff"
+                app:mrb_tickHeight="3dp"
                 app:mrb_tickInterval="1"
-                app:mrb_tickStart="8" />
+                android:layout_margin="3dp"/>
 
             <TextView
                 android:id="@+id/timeStartIndicatorTv"
@@ -184,17 +193,17 @@
             android:id="@+id/school_timedTv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignEnd="@+id/enterBtn"
             android:layout_alignLeft="@+id/enterBtn"
-            android:layout_alignRight="@+id/enterBtn"
             android:layout_alignStart="@+id/enterBtn"
+            android:layout_alignRight="@+id/enterBtn"
+            android:layout_alignEnd="@+id/enterBtn"
             android:layout_below="@+id/enterBtn"
-            android:layout_marginBottom="15dp"
-            android:layout_marginTop="10dp"
-            android:gravity="center"
             android:text=""
+            android:gravity="center"
+            android:layout_marginBottom="15dp"
             android:textColor="@color/errorColor"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"/>
 
     </RelativeLayout>
 </ScrollView>
