@@ -21,74 +21,74 @@ public class DatabaseVariables {
 
     /** declare Columns of each table.  NAMING FORMAT: COL_TABLENAME_COLUMNNAME */
     //Columns of  table TableauService
-    public static final String COL_TableauxService_Id = "Id";
-    public static final String COL_TableauxService_IdGroupe = "IdGroupe";
-    public static final String COL_TableauxService_Matricule = "Matricule";
-    public static final String COL_TableauxService_MassHoraireAffecter = "MassHoraireAffecter";
-    public static final String COL_TableauxService_Theorie = "Theorie";
-    public static final String COL_TableauxService_Pratique = "Pratique";
-    public static final String COL_TableauxService_IdModule = "IdModule";
+    public static final String COL_TABLEAUSERVICE_ID = "Id";
+    public static final String COL_TABLEAUSERVICE_IDGROUPE = "IdGroupe";
+    public static final String COL_TABLEAUSERVICE_MATRICULE = "Matricule";
+    public static final String COL_TABLEAUSERVICE_MASSHORAIREAFFECTER = "MassHoraireAffecter";
+    public static final String COL_TABLEAUSERVICE_THEORIE = "Theorie";
+    public static final String COL_TABLEAUSERVICE_PRATIQUE = "Pratique";
+    public static final String COL_TABLEAUSERVICE_IDMODULE = "IdModule";
 
-    //Columns of  table Absense
-    public static final String COL_Absense_Id = "Id";
-    public static final String COL_Absense_MatriculeEtudiant = "MatriculeEtudiant";
-    public static final String COL_Absense_Seance = "Seance";
-    public static final String COL_Absense_DateSeance = "DateSeance";
-    public static final String COL_Absense_Justifie = "Justifie";
-    public static final String COL_Absense_Type = "Type";
+    //Columns of  table Absence
+    public static final String COL_ABSENCE_ID= "Id";
+    public static final String COL_ABSENCE_MATRICULEETUDIANT = "MatriculeEtudiant";
+    public static final String COL_ABSENCE_SEANCE = "Seance";
+    public static final String COL_ABSENCE_DATESEANCE = "DateSeance";
+    public static final String COL_ABSENCE_JUSTIFIE = "Justifie";
+    public static final String COL_ABSENCE_TYPE = "Type";
 
     //Columns of  Table Filiere
-    public static final String COL_Filieres_IdFiliere = "IdFiliere";
-    public static final String COL_Filieres_CodeFiliere = "CodeFiliere";
-    public static final String COL_Filieres_Filiere = "Filiere";
-    public static final String COL_Filieres_CodeSecteur = "CodeSecteur";
-    public static final String COL_Filieres_Niveau = "Niveau";
-    public static final String COL_Filieres_Mode = "Mode";
+    public static final String COL_FILIERE_IDFILIERE = "IdFiliere";
+    public static final String COL_FILIERE_CODEFILIERE = "CodeFiliere";
+    public static final String COL_FILIERE_FILIERE = "Filiere";
+    public static final String COL_FILIERE_CODESECTEUR = "CodeSecteur";
+    public static final String COL_FILIERE_NIVEAU = "Niveau";
+    public static final String COL_FILIERE_MODE = "Mode";
 
     //Columns of Table Formateur
-    public static final String COL_Formateurs_Matricule = "Matricule";
-    public static final String COL_Formateurs_NomComplet = "NomComplet";
-    public static final String COL_Formateurs_Genie = "Genie";
-    public static final String COL_Formateurs_TypeFormateur = "TypeFormateur";
+    public static final String COL_FORMATEUR_MATRICULE = "Matricule";
+    public static final String COL_FORMATEUR_NOMCOMPLET = "NomComplet";
+    public static final String COL_FORMATEUR_GENIE = "Genie";
+    public static final String COL_FORMATEUR_TYPEFORMATEUR = "TypeFormateur";
 
     //Columns of Table Groupes
-    public static final String COL_Groupes_IdGroupe = "IdGroupe";
-    public static final String COL_Groupes_CodeGroupe = "CodeGroupe";
-    public static final String COL_Groupes_Annee = "Annee";
-    public static final String COL_Groupes_IdFiliere = "IdFiliere";
-    public static final String COL_Groupes_TypeGroupe = "TypeGroupe";
-    public static final String COL_Groupes_Statut = "Statut";
+    public static final String COL_GROUPES_IDGROUPE = "IdGroupe";
+    public static final String COL_GROUPES_CODEGROUPE = "CodeGroupe";
+    public static final String COL_GROUPES_ANNEE = "Annee";
+    public static final String COL_GROUPES_IDFILIERE = "IdFiliere";
+    public static final String COL_GROUPES_TYPEGORUPE = "TypeGroupe";
+    public static final String COL_GROUPES_STATUT = "Statut";
 
     //Columns of Table Inscription
-    public static final String COL_Inscription_MatriculeStagiaire = "MatriculeStagiaire";
-    public static final String COL_Inscription_IdGroupe = "IdGroupe";
-    public static final String COL_Inscription_DateInscription = "DateInscription";
+    public static final String COL_INSCRIPTION_MATRICULESTAGIARE = "MatriculeStagiaire";
+    public static final String COL_INSCRIPTION_IDGROUPE = "IdGroupe";
+    public static final String COL_INSCRIPTION_DATEINSCRIPTION = "DateInscription";
 
     //Columns of Table Justif
-    public static final String COL_Justif_Id = "Id";
-    public static final String COL_Justif_DateDepart = "DateDepart";
-    public static final String COL_Justif_DateDebut = "DateDebut";
-    public static final String COL_Justif_DateFin = "DateFin";
-    public static final String COL_Justif_Nature = "Nature";
-    public static final String COL_Justif_Observation = "Observation";
+    public static final String COL_JUSTIF_ID = "Id";
+    public static final String COL_JUSTIF_DATEDEPART = "DateDepart";
+    public static final String COL_JUSTIF_DATEDEPUT = "DateDebut";
+    public static final String COL_JUSTIF_DATEFIN = "DateFin";
+    public static final String COL_JUSTIF_NATURE = "Nature";
+    public static final String COL_JUSTIF_OBSERVATION = "Observation";
 
     //Columns of Table Niveaux
-    public static final String COL_Niveaux_Niveau = "Niveau";
-    public static final String COL_Niveaux_IntituleNiveau = "IntituleNiveau";
+    public static final String COL_NIVEAU_NIVEAU = "Niveau";
+    public static final String COL_NIVEAU_INTITULENIVEAU = "IntituleNiveau";
 
     //Columns of Table Secteurs
-    public static final String COL_Secteurs_CodeSecteur = "CodeSecteur";
-    public static final String COL_Secteurs_Secteur = "Secteur";
+    public static final String COL_SECTEURES_CODESECTEUR = "CodeSecteur";
+    public static final String COL_SECTEURES_SECTEUR = "Secteur";
 
     //Columns of Table Stagiaires
-    public static final String COL_Stagiaires_MatriculeStagiaire = "MatriculeStagiaire";
-    public static final String COL_Stagiaires_Nom = "Nom";
-    public static final String COL_Stagiaires_Prenom = "Prenom";
-    public static final String COL_Stagiaires_Sexe = "Sexe";
-    public static final String COL_Stagiaires_CIN = "CIN";
-    public static final String COL_Stagiaires_Adresse = "Adresse";
-    public static final String COL_Stagiaires_Tel = "Tel";
-    public static final String COL_Stagiaires_DateNaiss = "DateNaiss";
+    public static final String COL_STAGIAIRES_MATRICULESTAGIARE = "MatriculeStagiaire";
+    public static final String COL_STAGIAIRES_NOM = "Nom";
+    public static final String COL_STAGIAIRES_PRENOM = "Prenom";
+    public static final String COL_STAGIAIRES_SEXE = "Sexe";
+    public static final String COL_STAGIAIRES_CIN = "CIN";
+    public static final String COL_STAGIAIRES_ADRESSE = "Adresse";
+    public static final String COL_STAGIAIRES_TEL = "Tel";
+    public static final String COL_STAGIAIRES_DATENAISS = "DateNaiss";
 
 
 
